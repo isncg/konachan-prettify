@@ -1,4 +1,7 @@
 (function(){
+
+    console.log("Konachan Clean View")
+
     let ad = document.getElementsByTagName('iframe')
     while(ad && ad.length>0){
         ad[0].remove()
@@ -10,13 +13,15 @@
 
     document.getElementsByClassName('sidebar')[0].style.marginRight="0"
     document.getElementsByClassName('content')[0].style.width="85%"
-    document.getElementById('paginator').style.marginLeft= "-100%"
-    document.getElementById('paginator').style.marginRight= "-80%"
+    document.getElementById('paginator').style.marginRight= "20%"
     let ul = document.getElementById('post-list-posts')
     let lis = ul.children
-    for(let i in lis){
+    console.log(lis)
+    for(let i =0;i<lis.length; i++){
         let li = lis[i]
-        li.children[1].remove()
+        while(li.children && li.children.length>1){
+            li.children[1].remove()
+        }
         li.style.width="370px"
         let img = li.getElementsByTagName('img')[0]
         let frame = li.getElementsByClassName('inner')[0]
