@@ -1,0 +1,14 @@
+{
+  "name": "Konachan Posts",
+  "version": "1.0",
+  "description": "Enlarge images of konachan preview post list for a clear view",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://konachan.net/post?*"],
+      "css": [],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
