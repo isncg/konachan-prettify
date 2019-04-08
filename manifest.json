@@ -5,10 +5,10 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["http://konachan.net/post?*"],
+      "matches": ["http://konachan.net/post?*","http://konachan.com/post?*"],
       "css": [],
       "js": ["contentScript.js"],
-      "run_at": "document_idle"
+      "run_at": "document_end"
     }
   ]
 }

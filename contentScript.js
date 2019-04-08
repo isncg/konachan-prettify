@@ -1,9 +1,18 @@
 (function(){
+    let ad = document.getElementsByTagName('iframe')
+    while(ad.length>0){
+        ad[0].remove()
+    }
+    let footer = document.getElementsByClassName('footer')[0]
+    console.log(footer)
+    while(footer.children.length>1){
+        footer.children[footer.children.length-1].remove()
+    }
+
     document.getElementsByClassName('sidebar')[0].style.marginRight="0"
     document.getElementsByClassName('content')[0].style.width="85%"
     document.getElementById('paginator').style.marginLeft= "-100%"
     document.getElementById('paginator').style.marginRight= "-80%"
-    console.log('Hello')
     let ul = document.getElementById('post-list-posts')
     let lis = ul.children
     for(let i =0;i<lis.length; i++){
@@ -14,7 +23,7 @@
         let frame = li.getElementsByClassName('inner')[0]
         frame.style.width="360px"
         frame.style.height="360px"
-        var zoom = 360.0/img.width
+        let zoom = 360.0/img.width
         img.width*=zoom
         img.height*=zoom
         // img.width*=2 //150*2
