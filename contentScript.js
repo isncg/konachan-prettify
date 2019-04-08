@@ -1,12 +1,11 @@
 (function(){
     let ad = document.getElementsByTagName('iframe')
-    while(ad.length>0){
+    while(ad && ad.length>0){
         ad[0].remove()
     }
     let footer = document.getElementsByClassName('footer')[0]
-    console.log(footer)
-    while(footer.children.length>1){
-        footer.children[footer.children.length-1].remove()
+    while(footer && footer.children.length>1){
+        footer.children[1].remove()
     }
 
     document.getElementsByClassName('sidebar')[0].style.marginRight="0"
@@ -15,7 +14,7 @@
     document.getElementById('paginator').style.marginRight= "-80%"
     let ul = document.getElementById('post-list-posts')
     let lis = ul.children
-    for(let i =0;i<lis.length; i++){
+    for(let i in lis){
         let li = lis[i]
         li.children[1].remove()
         li.style.width="370px"
