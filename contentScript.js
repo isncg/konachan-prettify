@@ -1,7 +1,8 @@
 (function(){
     document.getElementsByClassName('sidebar')[0].style.marginRight="0"
     document.getElementsByClassName('content')[0].style.width="85%"
-
+    document.getElementById('paginator').style.marginLeft= "-100%"
+    document.getElementById('paginator').style.marginRight= "-80%"
     console.log('Hello')
     let ul = document.getElementById('post-list-posts')
     let lis = ul.children
