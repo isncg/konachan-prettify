@@ -5,6 +5,7 @@ Chrome extension
 Enlarge images of konachan preview post list for a clear view
 
 ### Features
+- Support yande.re
 - Bigger preview images
 - Blank space at right side removed
 - Image size info bar removed
