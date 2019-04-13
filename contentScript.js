@@ -12,8 +12,19 @@
             footer.children[1].remove()
         }
 
-        document.getElementsByClassName('sidebar')[0].style.marginRight = "0"
-        document.getElementsByClassName('content')[0].style.width = "85%"
+        let sidebarStyle = document.getElementsByClassName('sidebar')[0].style
+        sidebarStyle.marginRight="0"
+        sidebarStyle.width="15%"
+        sidebarStyle.maxHeight="100%"
+        sidebarStyle.position="fixed"
+        sidebarStyle.overflowY="auto"
+        sidebarStyle.overflowX="hidden"
+
+        let contentStyle =  document.getElementsByClassName('content')[0].style
+        contentStyle.width="85%"
+        contentStyle.marginLeft="15%"
+        contentStyle.paddingLeft="1em"
+
         document.getElementById('paginator').style.marginRight = "20%"
         let ul = document.getElementById('post-list-posts')
         let lis = ul.children
@@ -35,11 +46,19 @@
 
     else if (window.location.host === "yande.re") {
 
+        let sidebarStyle = document.getElementsByClassName('sidebar')[0].style
+        sidebarStyle.marginRight="0"
+        sidebarStyle.width="15%"
+        sidebarStyle.maxHeight="100%"
+        sidebarStyle.position="fixed"
+        sidebarStyle.overflowY="auto"
+        sidebarStyle.overflowX="hidden"
 
-        document.getElementsByClassName('sidebar')[0].style.marginRight = "0"
-        document.getElementsByClassName('sidebar')[0].style.width = "15%"
-        document.getElementsByClassName('content')[0].style.width = "85%"
-        document.getElementById('paginator').style.marginRight = "20%"
+        let contentStyle =  document.getElementsByClassName('content')[0].style
+        contentStyle.width="85%"
+        contentStyle.marginLeft="15%"
+        contentStyle.paddingLeft="1em"
+        
         let ul = document.getElementById('post-list-posts')
         let lis = ul.children
         for (let i = 0; i < lis.length; i++) {
