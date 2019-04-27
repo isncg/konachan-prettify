@@ -1,7 +1,7 @@
 (function () {
     console.log("konachan-big-preview")
     console.log("Star this project: https://github.com/EthanNote/konachan-big-preview")
-    
+
     let ad = document.getElementsByTagName('iframe')
     while (ad && ad.length > 0) {
         ad[0].remove()
@@ -41,5 +41,32 @@
         img.width *= zoom
         img.height *= zoom
     }
+
+    let tagsBar = document.getElementById('tag-sidebar').parentElement
+    let element = document.createElement('h5')
+    element.innerText = "Recent tags"
+    tagsBar.appendChild(element)
+
+    let recentTagsList = document.createElement('ul')
+    let recentTags = window.localStorage['recent_tags'].split(' ')
+
+    let tagTypes = ['general', 'artist', 'circle', 'copyright', 'character', 'style']
+    for (let i = 0; i < recentTags.length; i++) {
+        tag = recentTags[i]
+        if (tag.length <= 0) {
+            continue
+        }
+        let v = tag.split('`')
+        let tagTypeID = Number(v[0])
+        let tagStr = v[1]
+        let li = document.createElement('li')
+        let lia = document.createElement('a')
+        lia.href = '/post?tags=' + tagStr
+        lia.innerText = tagStr
+        li.appendChild(lia)
+        li.className = 'tag-link tag-type-' + tagTypes[tagTypeID]
+        recentTagsList.appendChild(li)
+    }
+    tagsBar.appendChild(recentTagsList)
 }
 )()
