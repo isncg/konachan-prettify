@@ -1,8 +1,8 @@
-# konachan-big-preview
+# Konachan Prettify
 
 Chrome extension
 
-Enlarge images of konachan preview post list for a clear view
+Adjust Konachan website UI for better experience
 
 ### Features
 - Support yande.re
