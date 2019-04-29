@@ -1,6 +1,6 @@
 (function () {
-    console.log("konachan-big-preview")
-    console.log("Star this project: https://github.com/EthanNote/konachan-big-preview")
+    console.log("Konachan Prettify")
+    console.log("Star this project: https://github.com/isncg/konachan-prettify")
 
     let sidebarStyle = document.getElementsByClassName('sidebar')[0].style
     sidebarStyle.marginRight = "0"
