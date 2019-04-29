@@ -1,7 +1,7 @@
 {
-  "name": "Konachan Posts",
+  "name": "Konachan Prettify",
   "version": "1.0",
-  "description": "Enlarge images of konachan preview post list for a clear view",
+  "description": "Adjust Konachan website UI for better experience",
   "manifest_version": 2,
   "content_scripts": [
     {
