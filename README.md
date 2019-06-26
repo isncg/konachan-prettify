@@ -12,5 +12,5 @@ Adjust Konachan website UI for better experience
 - Konachan.com ads removed (→_→)
 - Both .com and .net are supported
 
-<img src="http://i2.bvimg.com/683126/1c6c7b5353cb9e34.jpg?x=1"/>
+![](https://raw.githubusercontent.com/isncg/.img/master/konachan-prettify/1.png)
 
