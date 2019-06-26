@@ -14,3 +14,5 @@ Adjust Konachan website UI for better experience
 
 ![](https://raw.githubusercontent.com/isncg/.img/master/konachan-prettify/1.png)
 
+![](https://raw.githubusercontent.com/isncg/.img/master/konachan-prettify/2.png)
+
