@@ -11,7 +11,13 @@
         "http://konachan.net/post",
         "http://konachan.com/post?*",
         "http://konachan.com/post/",
-        "http://konachan.com/post"
+        "http://konachan.com/post",
+        "https://konachan.net/post?*",
+        "https://konachan.net/post/",
+        "https://konachan.net/post",
+        "https://konachan.com/post?*",
+        "https://konachan.com/post/",
+        "https://konachan.com/post"
       ],
       "css": [],
       "js": [
